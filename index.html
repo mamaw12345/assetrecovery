@@ -1,306 +1,827 @@
-<html class="scroll-smooth" lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <title>
-   Asset Recovery Law Firm
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <style>
-   body {
-      font-family: 'Inter', sans-serif;
-    }
-  </style>
- </head>
- <body class="flex flex-col min-h-screen bg-white text-gray-900">
-  <header class="bg-black text-white sticky top-0 z-50 border-b border-gray-800 shadow-md">
-   <div class="container max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-    <a aria-label="Asset Recovery Law Firm Home" class="text-green-500 font-extrabold text-3xl tracking-widest select-none" href="#">
-     AssetRecover
-    </a>
-    <nav aria-label="Primary navigation" class="hidden md:flex space-x-12 font-semibold text-gray-300" role="navigation">
-     <a class="hover:text-green-500 focus:outline-none focus:text-green-500 transition" href="#services" tabindex="0">
-      Asset Recovery Services
-     </a>
-     <a class="hover:text-green-500 focus:outline-none focus:text-green-500 transition" href="#why-choose" tabindex="0">
-      Why Choose Us
-     </a>
-     <a class="hover:text-green-500 focus:outline-none focus:text-green-500 transition" href="#about" tabindex="0">
-      About Us
-     </a>
-     <a class="hover:text-green-500 focus:outline-none focus:text-green-500 transition" href="#contact" tabindex="0">
-      Contact
-     </a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US Asset Recovery Services, LLC | Locate • Secure • Recover</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary: #2e7d32; /* Green primary color */
+            --secondary: #ffc107; /* Amber secondary color */
+            --accent: #d32f2f; /* Red accent color */
+            --light: #f5f7fa;
+            --dark: #263238;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .hero {
+            background-color: var(--primary);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(rgba(255,255,255,0.1) 2px, transparent 2px);
+            background-size: 20px 20px;
+            z-index: 1;
+        }
+        
+        .process-step {
+            transition: all 0.3s ease;
+        }
+        
+        .process-step:hover {
+            transform: translateY(-10px);
+        }
+        
+        .testimonial-card {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .stat-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: var(--secondary);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .btn-primary {
+            background: var(--primary);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background: #1b5e20;
+            transform: translateY(-2px);
+        }
+        
+        .btn-secondary {
+            background: var(--secondary;
+            color: var(--dark);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-secondary:hover {
+            background: #ffb300;
+            transform: translateY(-2px);
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            bottom: -10px;
+            left: 0;
+            background: var(--secondary);
+        }
+        
+        .service-icon {
+            color: var(--primary);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .case-study-card {
+            border-left: 4px solid var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#home" class="flex items-center space-x-3">
+  <img src="./US ASSET RECOVERY SERVICE LOGO (With Text).png" alt="US Asset Recovery Logo" class="h-20 w-auto">
+  <span class="text-2xl font-bold text-green-800">US Asset Recovery</span>
+</a>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-gray-800 hover:text-green-800">Home</a>
+                    <a href="#about" class="nav-link text-gray-800 hover:text-green-800">About</a>
+                    <a href="#services" class="nav-link text-gray-800 hover:text-green-800">Services</a>
+                    <a href="#testimonials" class="nav-link text-gray-800 hover:text-green-800">Testimonials</a>
+                    <a href="#contact" class="nav-link text-gray-800 hover:text-green-800">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="mobile-menu hidden md:hidden">
+                <a href="#home" class="block px-2 py-4 text-sm hover:bg-gray-200">Home</a>
+                <a href="#about" class="block px-2 py-4 text-sm hover:bg-gray-200">About</a>
+                <a href="#services" class="block px-2 py-4 text-sm hover:bg-gray-200">Services</a>
+                <a href="#testimonials" class="block px-2 py-4 text-sm hover:bg-gray-200">Testimonials</a>
+                <a href="#contact" class="block px-2 py-4 text-sm hover:bg-gray-200">Contact</a>
+            </div>
+        </div>
     </nav>
-    <button aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle mobile menu" class="md:hidden text-gray-300 text-3xl focus:outline-green-500" id="mobile-menu-button">
-     <i aria-hidden="true" class="fas fa-bars">
-     </i>
-    </button>
-   </div>
-   <nav aria-label="Mobile navigation" class="fixed inset-0 bg-green-900 text-white z-40 p-24 flex flex-col space-y-8 overflow-y-auto hidden" id="mobile-menu" role="navigation">
-    <a class="border-b border-green-700 pb-4 font-semibold text-2xl focus:outline-green-400" href="#services" role="menuitem" tabindex="0">
-     Asset Recovery Services
-    </a>
-    <a class="border-b border-green-700 pb-4 font-semibold text-2xl focus:outline-green-400" href="#why-choose" role="menuitem" tabindex="0">
-     Why Choose Us
-    </a>
-    <a class="border-b border-green-700 pb-4 font-semibold text-2xl focus:outline-green-400" href="#about" role="menuitem" tabindex="0">
-     About Us
-    </a>
-    <a class="font-semibold text-2xl focus:outline-green-400" href="#contact" role="menuitem" tabindex="0">
-     Contact
-    </a>
-   </nav>
-  </header>
-  <main class="flex-grow">
-   <section aria-label="Hero section" class="bg-gradient-to-br from-green-900 to-green-500 text-white px-6 py-24 flex flex-col items-center text-center md:flex-row md:text-left md:justify-center md:items-center md:px-12 lg:px-24 lg:py-32" role="banner">
-    <div class="max-w-xl md:max-w-lg lg:max-w-xl">
-     <h1 class="text-5xl font-extrabold leading-tight mb-6 tracking-tight drop-shadow-lg">
-      Recover Your Assets with Confidence
-     </h1>
-     <p class="text-lg mb-10 text-green-100/90 leading-relaxed drop-shadow-md">
-      Expert legal solutions specializing in asset recovery, debt collection,
-          and fiduciary enforcement to protect what rightfully belongs to you.
-     </p>
-     <button class="bg-white text-green-900 font-extrabold text-lg px-14 py-4 rounded-3xl shadow-lg hover:bg-green-50 focus:outline-none focus:ring-4 focus:ring-green-300 transition-transform transform hover:-translate-y-1" type="button">
-      Get a Free Consultation
-     </button>
-    </div>
-    <div aria-hidden="true" class="mt-14 w-full max-w-lg md:mt-0 md:ml-16 lg:max-w-xl rounded-3xl shadow-2xl overflow-hidden flex-shrink-0">
-     <img alt="Professional lawyer consulting with client in modern office with green and white decor, bright and sleek environment" class="w-full h-auto object-cover rounded-3xl" height="400" src="https://storage.googleapis.com/a1aa/image/4bd1f3d3-8b4d-4671-adcc-aa31c75660d2.jpg" width="600"/>
-    </div>
-   </section>
-   <section aria-labelledby="services-title" class="py-20 px-6 bg-white" id="services">
-    <div class="container max-w-7xl mx-auto">
-     <h2 class="text-4xl font-extrabold text-center mb-16 text-gray-900 tracking-wide" id="services-title">
-      Asset Recovery Services
-     </h2>
-     <ul class="grid grid-cols-1 gap-12 max-w-6xl mx-auto md:grid-cols-2 lg:grid-cols-3">
-      <li class="bg-white rounded-3xl p-10 shadow-lg flex flex-col items-center text-center hover:shadow-2xl transition-shadow duration-300">
-       <div aria-hidden="true" class="bg-green-500 rounded-xl w-14 h-14 flex items-center justify-center text-white text-4xl mb-8 drop-shadow-md">
-        <i class="fas fa-gavel">
-        </i>
-       </div>
-       <h3 class="text-2xl font-bold mb-4 text-gray-900">
-        Asset Recovery Litigation
-       </h3>
-       <p class="text-gray-700 leading-relaxed">
-        We provide expert representation in legal proceedings focused on
-              recovering lost or misappropriated assets for our clients. Our
-              attorneys navigate complex litigation with precision and
-              tenacity.
-       </p>
-      </li>
-      <li class="bg-white rounded-3xl p-10 shadow-lg flex flex-col items-center text-center hover:shadow-2xl transition-shadow duration-300">
-       <div aria-hidden="true" class="bg-green-500 rounded-xl w-14 h-14 flex items-center justify-center text-white text-4xl mb-8 drop-shadow-md">
-        <i class="fas fa-wallet">
-        </i>
-       </div>
-       <h3 class="text-2xl font-bold mb-4 text-gray-900">
-        Debt Collection
-       </h3>
-       <p class="text-gray-700 leading-relaxed">
-        Our firm specializes in effective debt collection strategies,
-              ensuring you receive what’s owed while maintaining professionalism
-              and compliance with all regulations.
-       </p>
-      </li>
-      <li class="bg-white rounded-3xl p-10 shadow-lg flex flex-col items-center text-center hover:shadow-2xl transition-shadow duration-300">
-       <div aria-hidden="true" class="bg-green-500 rounded-xl w-14 h-14 flex items-center justify-center text-white text-4xl mb-8 drop-shadow-md">
-        <i class="fas fa-shield-alt">
-        </i>
-       </div>
-       <h3 class="text-2xl font-bold mb-4 text-gray-900">
-        Fiduciary Enforcement
-       </h3>
-       <p class="text-gray-700 leading-relaxed">
-        We hold fiduciaries accountable under the law, safeguarding your
-              assets against breaches of trust or mismanagement with rigorous
-              enforcement.
-       </p>
-      </li>
-      <li class="bg-white rounded-3xl p-10 shadow-lg flex flex-col items-center text-center hover:shadow-2xl transition-shadow duration-300">
-       <div aria-hidden="true" class="bg-green-500 rounded-xl w-14 h-14 flex items-center justify-center text-white text-4xl mb-8 drop-shadow-md">
-        <i class="fas fa-search-dollar">
-        </i>
-       </div>
-       <h3 class="text-2xl font-bold mb-4 text-gray-900">
-        Asset Tracing &amp; Investigation
-       </h3>
-       <p class="text-gray-700 leading-relaxed">
-        Utilizing advanced investigative techniques and financial forensics,
-              we trace hidden or transferred assets globally to maximize recovery.
-       </p>
-      </li>
-      <li class="bg-white rounded-3xl p-10 shadow-lg flex flex-col items-center text-center hover:shadow-2xl transition-shadow duration-300">
-       <div aria-hidden="true" class="bg-green-500 rounded-xl w-14 h-14 flex items-center justify-center text-white text-4xl mb-8 drop-shadow-md">
-        <i class="fas fa-balance-scale">
-        </i>
-       </div>
-       <h3 class="text-2xl font-bold mb-4 text-gray-900">
-        Negotiation &amp; Settlement
-       </h3>
-       <p class="text-gray-700 leading-relaxed">
-        We skillfully negotiate settlements to recover assets efficiently,
-              minimizing litigation costs and time while protecting your interests.
-       </p>
-      </li>
-      <li class="bg-white rounded-3xl p-10 shadow-lg flex flex-col items-center text-center hover:shadow-2xl transition-shadow duration-300">
-       <div aria-hidden="true" class="bg-green-500 rounded-xl w-14 h-14 flex items-center justify-center text-white text-4xl mb-8 drop-shadow-md">
-        <i class="fas fa-file-contract">
-        </i>
-       </div>
-       <h3 class="text-2xl font-bold mb-4 text-gray-900">
-        Legal Compliance &amp; Advisory
-       </h3>
-       <p class="text-gray-700 leading-relaxed">
-        We provide comprehensive legal advice to ensure compliance with
-              asset recovery laws and regulations, helping you avoid pitfalls.
-       </p>
-      </li>
-     </ul>
-    </div>
-   </section>
-   <section aria-labelledby="why-choose-title" class="py-20 px-6 bg-white" id="why-choose">
-    <div class="max-w-4xl mx-auto text-center">
-     <h2 class="text-4xl font-extrabold mb-8 text-gray-900 tracking-wide" id="why-choose-title">
-      Why Choose AssetRecover?
-     </h2>
-     <p class="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed mb-6">
-      With decades of combined experience, our dedicated legal team is
-          committed to providing personalized, aggressive, and ethical
-          representation. We leverage cutting-edge technology and deep legal
-          expertise to navigate complex asset recovery cases efficiently,
-          ensuring optimal outcomes for our clients.
-     </p>
-     <p class="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed mb-6">
-      Our approach is client-centric, transparent, and results-driven. We
-          understand the emotional and financial stakes involved and work
-          tirelessly to protect your rights and recover your assets swiftly.
-     </p>
-     <p class="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
-      We maintain strong relationships with financial institutions,
-          investigators, and international legal bodies to enhance our recovery
-          capabilities worldwide.
-     </p>
-    </div>
-   </section>
-   <section aria-labelledby="about-title" class="py-20 px-6 bg-gray-50" id="about">
-    <div class="max-w-6xl mx-auto">
-     <h2 class="text-4xl font-extrabold mb-12 text-center text-gray-900 tracking-wide" id="about-title">
-      About AssetRecover
-     </h2>
-     <div class="flex flex-col md:flex-row md:space-x-16 items-center">
-      <div class="md:w-1/2 mb-12 md:mb-0 rounded-3xl overflow-hidden shadow-lg">
-       <img alt="Modern law firm office with team collaborating and legal books on shelves, sleek professional environment" class="w-full h-auto object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/a1dafd83-aa5e-4dd9-70bd-48a9b75d98bd.jpg" width="600"/>
-      </div>
-      <div class="md:w-1/2 text-gray-700 text-lg leading-relaxed space-y-6">
-       <p>
-        Founded in 2005, AssetRecover has established itself as a premier
-              law firm specializing exclusively in asset recovery and fiduciary
-              enforcement. Our mission is to provide unparalleled legal services
-              that combine expertise, innovation, and integrity.
-       </p>
-       <p>
-        Our multidisciplinary team includes seasoned attorneys, forensic
-              accountants, and investigators who collaborate seamlessly to
-              uncover hidden assets and enforce your legal rights. We pride
-              ourselves on our transparent communication, strategic approach,
-              and relentless pursuit of justice.
-       </p>
-       <p>
-        Headquartered in the financial district, our firm embraces modern
-              technology and global networks to handle complex cross-border
-              cases efficiently. We are committed to protecting your interests
-              and recovering what is rightfully yours with professionalism and
-              care.
-       </p>
-       <p>
-        At AssetRecover, your case is our priority. We tailor every
-              strategy to your unique situation, ensuring the best possible
-              outcome.
-       </p>
-      </div>
-     </div>
-    </div>
-   </section>
-   <section aria-labelledby="contact-title" class="py-20 px-6 bg-gray-100" id="contact">
-    <div class="max-w-xl mx-auto bg-white rounded-3xl p-12 shadow-lg border border-gray-200">
-     <h2 class="text-4xl font-extrabold mb-10 text-gray-900 text-center tracking-wide" id="contact-title">
-      Contact Us
-     </h2>
-     <form aria-describedby="contact-desc" class="flex flex-col space-y-8" novalidate="">
-      <label class="font-semibold text-gray-700" for="name">
-       Full Name
-      </label>
-      <input aria-required="true" class="border border-gray-400 rounded-xl px-5 py-4 text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 transition" id="name" name="name" placeholder="Your full name" required="" type="text"/>
-      <label class="font-semibold text-gray-700" for="email">
-       Email Address
-      </label>
-      <input aria-required="true" class="border border-gray-400 rounded-xl px-5 py-4 text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 transition" id="email" name="email" placeholder="you@example.com" required="" type="email"/>
-      <label class="font-semibold text-gray-700" for="message">
-       Message
-      </label>
-      <textarea aria-required="true" class="border border-gray-400 rounded-xl px-5 py-4 text-gray-900 resize-y focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 transition" id="message" name="message" placeholder="Describe your case or question" required="" rows="5"></textarea>
-      <button class="bg-green-600 text-white font-extrabold text-lg py-5 rounded-3xl shadow-lg hover:bg-green-700 focus:outline-none focus:ring-4 focus:ring-green-400 transition-transform transform hover:-translate-y-1" type="submit">
-       Submit
-      </button>
-     </form>
-    </div>
-   </section>
-  </main>
-  <footer class="bg-black text-gray-500 py-12 text-center">
-   <div class="container max-w-7xl mx-auto px-6">
-    <p class="text-sm select-none">
-     © 2024 AssetRecover Law Firm. All rights reserved.
+
+    <!-- Hero Section -->
+    <section id="home" class="hero text-white py-20 md:py-32">
+        <div class="hero-pattern"></div>
+        <div class="hero-content container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">LOCATE • SECURE • RECOVER</h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">At US Asset Recovery Services, we locate, secure, and recover money, property, and assets that rightfully belong to you. In today's complex financial landscape, millions of individuals and property owners are unaware of assets that are legally theirs. Without taking affirmative action to assert claims, these funds will never be returned.</p>
+            <a href="#contact" class="btn-secondary text-gray-900 px-8 py-3 rounded-md text-lg font-semibold inline-block">Get Your FREE Asset Recovery Search Today</a>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-gray-100 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="stat-card p-6 rounded-lg shadow-md">
+                    <div class="text-3xl font-bold text-green-800">$2B+</div>
+                    <div class="text-gray-600">Unclaimed Assets</div>
+                </div>
+                <div class="stat-card p-6 rounded-lg shadow-md">
+                    <div class="text-3xl font-bold text-green-800">$15K-$75K</div>
+                    <div class="text-gray-600">Average Recovery</div>
+                </div>
+                <div class="stat-card p-6 rounded-lg shadow-md">
+                    <div class="text-3xl font-bold text-green-800">97%</div>
+                    <div class="text-gray-600">Success Rate</div>
+                </div>
+                <div class="stat-card p-6 rounded-lg shadow-md">
+                    <div class="text-3xl font-bold text-green-800">No Cost</div>
+                    <div class="text-gray-600">Unless Recovery</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 section-title">Why Choose US Asset Recovery Services?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="service-icon"><i class="fas fa-search"></i></div>
+                    <h3 class="text-xl font-semibold mb-3">Research Excellence</h3>
+                    <p>Deep search capabilities to locate, secure, and recover missing assets</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="service-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3 class="text-xl font-semibold mb-3">Expert Knowledge</h3>
+                    <p>Comprehensive understanding of claim processes and recovery procedures</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="text-xl font-semibold mb-3">Proven Track Record</h3>
+                    <p>Successfully recovered millions for clients nationwide</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3 class="text-xl font-semibold mb-3">No Risk to You</h3>
+                    <p>No Recovery, No Fee or Costs</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="service-icon"><i class="fas fa-bolt"></i></div>
+                    <h3 class="text-xl font-semibold mb-3">Fast Results</h3>
+                    <p>Most claims processed within 60-120 days</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="service-icon"><i class="fas fa-user-tie"></i></div>
+                    <h3 class="text-xl font-semibold mb-3">Personal Service</h3>
+                    <p>Dedicated case manager for each client</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 section-title">About Us</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-green-800">Our Story</h3>
+                    <p class="mb-6">US Asset Recovery Services was founded with a clear mission: help individuals recover money, property, and assets being held by government agencies or within the legal system. Unfortunately, millions of people are unaware of the existence of their missing assets. To prevent the forfeiture of rightful property, US Asset Recovery Services locates, secures, and recovers these assets with a guarantee—if there's no recovery, our services are completely free.</p>
+                    
+                    <h3 class="text-2xl font-semibold mb-4 text-green-800">Our Mission</h3>
+                    <p>Our mission is to locate, secure, and recover unclaimed money, assets, and property for their rightful owners through unwavering integrity and complete transparency in all our dealings. We leverage our expert knowledge of state and local recovery laws to maximize your recovery while minimizing your stress, providing personalized attention and regular updates throughout the entire process. Every client receives dedicated service built on honesty, expertise, proven results, and genuine care for your financial recovery.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-green-800">Why Assets Go Unclaimed</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-2"><i class="fas fa-check-circle"></i></span>
+                            <span>Millions are unaware they have unclaimed money, assets, and property</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-2"><i class="fas fa-check-circle"></i></span>
+                            <span>Time limitations for asserting claims</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-2"><i class="fas fa-check-circle"></i></span>
+                            <span>Complex and demanding claim procedures</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-2"><i class="fas fa-check-circle"></i></span>
+                            <span>Frequent address changes</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-2"><i class="fas fa-check-circle"></i></span>
+                            <span>Inadequate notifications from agencies</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-2"><i class="fas fa-check-circle"></i></span>
+                            <span>Detailed paperwork and documentation requirements</span>
+                        </li>
+                    </ul>
+                    
+                    <h3 class="text-2xl font-semibold mt-8 mb-4 text-green-800">Our Expertise</h3>
+                    <p>Our team includes highly trained asset recovery specialists who understand the intricacies of asset location, claims, and recovery processes. We utilize our nationwide experience to efficiently navigate complex procedures and maximize recoveries. Our expertise gives us the confidence to guarantee every client that if there's no recovery, our services are totally free.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Process -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 section-title">Our Process</h2>
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div class="process-step p-6">
+                    <div class="bg-green-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-search-location text-green-800 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">LOCATE</h3>
+                    <p>Comprehensive search and identification</p>
+                </div>
+                <div class="process-step p-6">
+                    <div class="bg-green-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-lock text-green-800 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">SECURE</h3>
+                    <p>Protection and verification of claims</p>
+                </div>
+                <div class="process-step p-6">
+                    <div class="bg-green-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-hand-holding-usd text-green-800 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">RECOVER</h3>
+                    <p>Successful fund disbursement</p>
+                </div>
+                <div class="process-step p-6">
+                    <div class="bg-green-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-flag-usa text-green-800 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">NATIONWIDE</h3>
+                    <p>All 50 states coverage</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 section-title">Our Services</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold mb-4 text-green-800 border-b pb-2">Property Research</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-2"><i class="fas fa-check"></i></span>
+                            <span>Comprehensive title searches</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-2"><i class="fas fa-check"></i></span>
+                            <span>Ownership verification</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-2"><i class="fas fa-check"></i></span>
+                            <span>Lien and encumbrance analysis</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-2"><i class="fas fa-check"></i></span>
+                            <span>Historical property value assessment</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold mb-4 text-green-800 border-b pb-2">Documentation Services</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-2"><i class="fas fa-check"></i></span>
+                            <span>Affidavit preparation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-2"><i class="fas fa-check"></i></span>
+                            <span>Proof of ownership documentation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-2"><i class="fas fa-check"></i></span>
+                            <span>Court filing assistance</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-2"><i class="fas fa-check"></i></span>
+                            <span>Legal representation services</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold mb-4 text-green-800 border-b pb-2">Consultation Services</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-2"><i class="fas fa-check"></i></span>
+                            <span>Free asset searches</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-2"><i class="fas fa-check"></i></span>
+                            <span>Eligibility assessments</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-2"><i class="fas fa-check"></i></span>
+                            <span>Recovery timeline estimates</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-2"><i class="fas fa-check"></i></span>
+                            <span>Process explanation and guidance</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <!-- Case Studies -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 section-title">Case Studies</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="case-study-card bg-gray-50 p-8 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-3 text-green-800">Case Study 1: The Forgotten Inheritance</h3>
+                    <p class="mb-2"><strong>Background:</strong> Estate beneficiary unaware of surplus funds from deceased parent's foreclosed property</p>
+                    <p class="mb-2"><strong>Challenge:</strong> Complex probate requirements and multi-jurisdictional claim process</p>
+                    <p class="mb-4"><strong>Result:</strong> $45,000 recovery within 90 days</p>
+                    <div class="bg-green-100 p-4 rounded">
+                        <p class="text-green-800 font-medium italic">"I had no idea this money existed. US Asset Recovery Services handled everything professionally and got results quickly."</p>
+                    </div>
+                </div>
+                <div class="case-study-card bg-gray-50 p-8 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-3 text-green-800">Case Study 2: The Business Recovery</h3>
+                    <p class="mb-2"><strong>Background:</strong> Restaurant owner lost property to foreclosure during the COVID-19 pandemic</p>
+                    <p class="mb-2"><strong>Challenge:</strong> Tight deadline to assert claim and rectify incomplete documentation</p>
+                    <p class="mb-4"><strong>Result:</strong> $78,000 recovery in 21 days</p>
+                    <div class="bg-green-100 p-4 rounded">
+                        <p class="text-green-800 font-medium italic">"They saved my business by recovering funds I didn't know I was entitled to. Incredible service!"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 section-title">What Our Clients Say</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="testimonial-card bg-white p-6 rounded-lg">
+                    <div class="flex mb-4">
+                        <div class="text-yellow-500">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="mb-4 italic">"I had no idea I was entitled to any money after my foreclosure. US Asset Recovery Services found $52,000 that belonged to me and handled everything professionally. They kept me informed throughout the process and delivered exactly what they promised. I can't thank them enough!"</p>
+                    <p class="font-semibold text-green-800">Sarah M. - Phoenix, AZ</p>
+                </div>
+                <div class="testimonial-card bg-white p-6 rounded-lg">
+                    <div class="flex mb-4">
+                        <div class="text-yellow-500">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="mb-4 italic">"After losing my investment properties, I thought that was the end. These professionals recovered over $90,000 from three different foreclosure sales. Their expertise saved me from financial ruin. Professional, honest, and they get results."</p>
+                    <p class="font-semibold text-green-800">Robert T. - Houston, TX</p>
+                </div>
+                <div class="testimonial-card bg-white p-6 rounded-lg">
+                    <div class="flex mb-4">
+                        <div class="text-yellow-500">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="mb-4 italic">"The process was much easier than I expected. They handled all the paperwork and legal requirements. Within 6 weeks, I had a check for $34,500. Outstanding service and communication throughout."</p>
+                    <p class="font-semibold text-green-800">Maria L. - Miami, FL</p>
+                </div>
+                <div class="testimonial-card bg-white p-6 rounded-lg">
+                    <div class="flex mb-4">
+                        <div class="text-yellow-500">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="mb-4 italic">"I was skeptical at first, but they explained everything clearly and never asked for money upfront. They recovered $67,000 from my foreclosure. These are the professionals you want on your side."</p>
+                    <p class="font-semibold text-green-800">David K. - Atlanta, GA</p>
+                </div>
+                <div class="testimonial-card bg-white p-6 rounded-lg">
+                    <div class="flex mb-4">
+                        <div class="text-yellow-500">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="mb-4 italic">"My family didn't know dad had money coming from his property sale. US Asset Recovery Services helped us navigate the estate requirements and recovered $41,000. They made a difficult time much easier."</p>
+                    <p class="font-semibold text-green-800">Jennifer R. - Las Vegas, NV</p>
+                </div>
+                <div class="testimonial-card bg-white p-6 rounded-lg">
+                    <div class="flex mb-4">
+                        <div class="text-yellow-500">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="mb-4 italic">"Fast, professional, and results-oriented. They recovered $58,000 in just 35 days. I would recommend them to anyone who's lost property to foreclosure or tax sale."</p>
+                    <p class="font-semibold text-green-800">Michael S. - Charlotte, NC</p>
+                </div>
+            </div>
+            
+            <div class="mt-16 bg-white p-8 rounded-lg shadow-sm">
+                <h3 class="text-2xl font-semibold mb-6 text-center text-green-800">Client Feedback Highlights</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-xl font-medium mb-3 flex items-center"><i class="fas fa-glasses text-green-600 mr-2"></i> Transparency</h4>
+                        <p class="italic">"They explained every step and never surprised me with hidden fees."</p>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-medium mb-3 flex items-center"><i class="fas fa-comments text-green-600 mr-2"></i> Communication</h4>
+                        <p class="italic">"Regular updates and always available to answer questions."</p>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-medium mb-3 flex items-center"><i class="fas fa-user-graduate text-green-600 mr-2"></i> Expertise</h4>
+                        <p class="italic">"They knew exactly what to do and had all the right connections."</p>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-medium mb-3 flex items-center"><i class="fas fa-trophy text-green-600 mr-2"></i> Results</h4>
+                        <p class="italic">"They delivered exactly what they promised, when they promised it."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SMS Terms & Conditions -->
+<section id="sms-terms" class="py-20 bg-white text-gray-800 font-inter">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <h2 class="text-4xl font-bold text-center text-green-800 mb-4">SMS Terms & Conditions</h2>
+    <p class="text-sm text-center text-gray-500 mb-12">
+      Effective: <span class="text-gray-700 font-medium">[INSERT DATE]</span> • Last Updated: <span class="text-gray-700 font-medium">[INSERT DATE]</span>
     </p>
-    <div aria-label="Social media links" class="flex justify-center space-x-10 mt-6 text-2xl" role="list">
-     <a aria-label="Facebook" class="text-gray-500 hover:text-green-500 focus:outline-none focus:text-green-500 transition" href="#" role="listitem" tabindex="0">
-      <i aria-hidden="true" class="fab fa-facebook-f">
-      </i>
-     </a>
-     <a aria-label="Twitter" class="text-gray-500 hover:text-green-500 focus:outline-none focus:text-green-500 transition" href="#" role="listitem" tabindex="0">
-      <i aria-hidden="true" class="fab fa-twitter">
-      </i>
-     </a>
-     <a aria-label="LinkedIn" class="text-gray-500 hover:text-green-500 focus:outline-none focus:text-green-500 transition" href="#" role="listitem" tabindex="0">
-      <i aria-hidden="true" class="fab fa-linkedin-in">
-      </i>
-     </a>
+
+    <div class="grid md:grid-cols-2 gap-12 text-base leading-relaxed">
+
+      <!-- Column 1 -->
+      <div class="space-y-10">
+
+        <!-- Overview -->
+        <div>
+          <h3 class="text-xl font-semibold text-green-800 border-b pb-2 mb-3">Overview</h3>
+          <p>
+            By opting into SMS via any form, platform, or channel, you consent to receive text messages from
+            <strong>US Asset Recovery Services LLC</strong>. These messages may include legal alerts, surplus updates,
+            appointment reminders, and fund disbursement notifications. Message frequency depends on your case status.
+            Standard carrier rates may apply. Text <strong>HELP</strong> for support or <strong>STOP</strong> to opt out.
+          </p>
+        </div>
+
+        <!-- Types of Messages -->
+        <div>
+          <h3 class="text-xl font-semibold text-green-800 border-b pb-2 mb-3">Types of Messages</h3>
+          <ul class="list-disc pl-5 space-y-2">
+            <li>Surplus recovery updates and notifications</li>
+            <li>Claim status and fund release confirmations</li>
+            <li>Time-sensitive legal recovery alerts</li>
+            <li>Appointment reminders and confirmations</li>
+          </ul>
+        </div>
+
+        <!-- Frequency & Costs -->
+        <div>
+          <h3 class="text-xl font-semibold text-green-800 border-b pb-2 mb-3">Message Frequency & Costs</h3>
+          <ul class="list-disc pl-5 space-y-2">
+            <li>Frequency varies based on your case activity</li>
+            <li>Urgent messages may be sent after business hours</li>
+            <li>No charges from us; standard message/data rates may apply</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Column 2 -->
+      <div class="space-y-10">
+
+        <!-- Opt-Out Instructions -->
+        <div>
+          <h3 class="text-xl font-semibold text-green-800 border-b pb-2 mb-3">Opt-Out Instructions</h3>
+          <ul class="list-disc pl-5 space-y-2">
+            <li>Text <strong>STOP</strong> at any time to unsubscribe</li>
+            <li>You will receive confirmation of your opt-out</li>
+            <li>Text <strong>START</strong> to re-enroll at any time</li>
+            <li>Essential updates may still be sent when legally required</li>
+          </ul>
+        </div>
+
+        <!-- Education & Guidance -->
+        <div>
+          <h3 class="text-xl font-semibold text-green-800 border-b pb-2 mb-3">Education & Guidance</h3>
+          <ul class="list-disc pl-5 space-y-2">
+            <li>Tips for protecting your legal and financial rights</li>
+            <li>Awareness of scams and fraud prevention alerts</li>
+            <li>Guidance on surplus claim procedures</li>
+            <li>Best practices for engaging in recovery efforts</li>
+          </ul>
+        </div>
+
+        <!-- Help & Support -->
+        <div>
+          <h3 class="text-xl font-semibold text-green-800 border-b pb-2 mb-3">Help & Support</h3>
+          <ul class="list-disc pl-5 space-y-2">
+            <li>Text <strong>HELP</strong> to our SMS number for assistance</li>
+            <li>Website: <a href="[INSERT URL]" class="text-blue-600 underline">[INSERT URL]</a></li>
+            <li>Phone: <a href="tel:[INSERT PHONE]" class="text-blue-600 underline">[INSERT PHONE]</a></li>
+            <li>Email: <a href="mailto:[INSERT EMAIL]" class="text-blue-600 underline">[INSERT EMAIL]</a></li>
+          </ul>
+        </div>
+
+      </div>
     </div>
-   </div>
-  </footer>
-  <script>
-   'use strict';
-    const menuToggleBtn = document.getElementById('mobile-menu-button');
-    const mobileNav = document.getElementById('mobile-menu');
+  </div>
+</section>
 
-    menuToggleBtn.addEventListener('click', () => {
-      const expanded = menuToggleBtn.getAttribute('aria-expanded') === 'true';
-      menuToggleBtn.setAttribute('aria-expanded', String(!expanded));
-      mobileNav.classList.toggle('hidden');
-    });
 
-    // Close mobile menu on navigation click (for accessibility)
-    mobileNav.querySelectorAll('a').forEach((link) => {
-      link.addEventListener('click', () => {
-        mobileNav.classList.add('hidden');
-        menuToggleBtn.setAttribute('aria-expanded', 'false');
-        menuToggleBtn.focus();
-      });
-    });
+<!-- SMS Privacy & Data Protection Section -->
+<section id="sms-privacy" class="py-20 bg-gray-50 text-gray-800 font-inter">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center text-green-800 mb-4">Privacy & Data Protection</h2>
+    <p class="text-sm text-center text-gray-500 mb-12">
+      US Asset Recovery Services LLC • Effective: <span class="text-gray-700 font-medium">[INSERT DATE]</span> • Last Updated: <span class="text-gray-700 font-medium">[INSERT DATE]</span>
+    </p>
 
-    // Close mobile menu on Escape key
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && !mobileNav.classList.contains('hidden')) {
-        mobileNav.classList.add('hidden');
-        menuToggleBtn.setAttribute('aria-expanded', 'false');
-        menuToggleBtn.focus();
-      }
-    });
-  </script>
- </body>
+    <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto text-base leading-relaxed">
+
+      <!-- Column 1 -->
+      <div class="space-y-10">
+
+        <!-- Privacy Commitment -->
+        <div>
+          <h3 class="text-xl font-semibold text-green-800 border-b pb-2 mb-2">Privacy Commitment</h3>
+          <p>We are committed to protecting your personal information. SMS communications are used exclusively for case-related updates under strict confidentiality.</p>
+          <ul class="list-disc pl-5 mt-4 space-y-2">
+            <li>Your mobile number and SMS consent are never shared with third parties.</li>
+            <li>All client communications are confidential.</li>
+            <li>SMS messages are protected under client confidentiality standards.</li>
+          </ul>
+        </div>
+
+        <!-- Consent & Agreement -->
+        <div>
+          <h3 class="text-xl font-semibold text-green-800 border-b pb-2 mb-2">Consent & Agreement</h3>
+          <ul class="list-disc pl-5 space-y-2">
+            <li>You confirm you are the authorized user of the mobile number provided.</li>
+            <li>You consent to receive automated and manual case-related messages.</li>
+            <li>Consent is not required to access our services.</li>
+            <li>Standard carrier message and data rates may apply.</li>
+            <li>You agree to receive legal or financial updates via SMS.</li>
+          </ul>
+        </div>
+
+        <!-- Security & Confidentiality -->
+        <div>
+          <h3 class="text-xl font-semibold text-green-800 border-b pb-2 mb-2">Security & Confidentiality</h3>
+          <ul class="list-disc pl-5 space-y-2">
+            <li>SMS may contain sensitive legal or financial case information.</li>
+            <li>You are responsible for securing your device and data.</li>
+            <li>Messages should not be shared with unauthorized individuals.</li>
+            <li>Contact us immediately if you suspect unauthorized access.</li>
+            <li>Secure protocols and encryption may be implemented when required.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="space-y-10">
+
+        <!-- Technical Requirements -->
+        <div>
+          <h3 class="text-xl font-semibold text-green-800 border-b pb-2 mb-2">Technical Requirements</h3>
+          <ul class="list-disc pl-5 space-y-2">
+            <li>SMS is supported by most major U.S. carriers.</li>
+            <li>Delivery may be affected by network coverage or carrier limitations.</li>
+            <li>Delays in message delivery may occur; real-time delivery is not guaranteed.</li>
+            <li>Messages may originate from multiple approved short codes.</li>
+            <li>Message frequency varies based on case activity and urgency.</li>
+          </ul>
+        </div>
+
+        <!-- Disclaimers & Limitations -->
+        <div>
+          <h3 class="text-xl font-semibold text-green-800 border-b pb-2 mb-2">Disclaimers & Limitations</h3>
+          <ul class="list-disc pl-5 space-y-2">
+            <li>We are not liable for delays, errors, or failures caused by third-party carriers.</li>
+            <li>You are responsible for any charges incurred through your mobile provider.</li>
+            <li>All SMS content is provided "as is" without warranties of any kind.</li>
+            <li>We reserve the right to modify, suspend, or terminate SMS services at any time.</li>
+            <li>Messages do not constitute legal advice and are for informational purposes only.</li>
+          </ul>
+        </div>
+
+        <!-- Compliance & Ethics -->
+        <div>
+          <h3 class="text-xl font-semibold text-green-800 border-b pb-2 mb-2">Compliance & Ethics</h3>
+          <ul class="list-disc pl-5 space-y-2">
+            <li>Our SMS practices comply with TCPA, CTIA, and applicable “Do Not Call” regulations.</li>
+            <li>We adhere to legal and ethical standards set by state bar associations and financial regulators.</li>
+            <li>All communications reflect our commitment to integrity, professionalism, and transparency.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Additional Sections -->
+    <div class="max-w-6xl mx-auto mt-20 space-y-12">
+
+      <!-- International Clients -->
+      <div class="bg-white p-6 rounded-xl shadow-sm">
+        <h3 class="text-xl font-semibold text-green-800 mb-2 border-b pb-2">International & Out-of-State Clients</h3>
+        <ul class="list-disc pl-5 space-y-2">
+          <li>SMS functionality may be limited for clients outside the United States.</li>
+          <li>International message and data rates may apply.</li>
+          <li>Alternative communication methods (e.g., email, phone) are available upon request.</li>
+          <li>We comply with relevant global data protection laws when applicable.</li>
+        </ul>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="bg-white p-6 rounded-xl shadow-sm">
+        <h3 class="text-xl font-semibold text-green-800 mb-2 border-b pb-2">Contact Information</h3>
+        <p class="font-medium mb-1">US Asset Recovery Services LLC</p>
+        <p class="mb-1"><i class="fas fa-map-marker-alt text-green-600 mr-2"></i>910 NE 73rd Street, Miami, FL 33138</p>
+        <p class="mb-1"><i class="fas fa-phone-alt text-green-600 mr-2"></i>Phone: <a href="tel:[INSERT PHONE]" class="text-blue-600 underline">[INSERT PHONE]</a></p>
+        <p class="mb-1"><i class="fas fa-envelope text-green-600 mr-2"></i>Email: <a href="mailto:[INSERT EMAIL]" class="text-blue-600 underline">[INSERT EMAIL]</a></p>
+        <p><i class="fas fa-globe text-green-600 mr-2"></i>Website: <a href="[INSERT URL]" class="text-blue-600 underline">[INSERT URL]</a></p>
+      </div>
+
+      <!-- Updates to Terms -->
+      <div class="bg-white p-6 rounded-xl shadow-sm">
+        <h3 class="text-xl font-semibold text-green-800 mb-2 border-b pb-2">Updates to These Terms</h3>
+        <p>We may update these terms periodically. All changes will be published on our official website. Continued use of SMS communications indicates acceptance of the most current terms. For major updates, we may notify you directly via SMS or email.</p>
+      </div>
+
+      <!-- Emergency Communication -->
+      <div class="bg-white p-6 rounded-xl shadow-sm">
+        <h3 class="text-xl
+
+
+    <!-- Contact Information -->
+    <section id="contact" class="py-16 bg-green-800 text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 section-title" style="color: white;">Get Started Today</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Contact Information</h3>
+                    <p class="mb-2"><i class="fas fa-phone-alt mr-2"></i> Phone: 1-800-[NUMBER]</p>
+                    <p class="mb-2"><i class="fas fa-envelope mr-2"></i> Email: [EMAIL ADDRESS]</p>
+                    <p><i class="fas fa-globe mr-2"></i> Website: www.[WEBSITE]</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Main Office Location</h3>
+                    <p><i class="fas fa-map-marker-alt mr-2"></i> 910 NE 73rd Street<br>Miami, FL 33138</p>
+                    <h4 class="text-xl font-semibold mt-4 mb-2">Business Hours</h4>
+                    <p><i class="far fa-clock mr-2"></i> Monday - Saturday: 8:00 AM - 8:00 PM (Eastern Time)</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Free Consultation</h3>
+                    <p class="mb-4">No obligation asset search and eligibility assessment. Most consultations completed the same day.</p>
+                    <a href="#contact" class="btn-secondary text-gray-900 px-6 py-3 rounded-md text-lg font-semibold inline-block">Request Consultation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-green-700 text-white text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-6">Ready to Recover Your Assets?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Don't let your money remain unclaimed any longer. Contact us today for your free asset search and consultation. Our experts are ready to help you recover what's rightfully yours.</p>
+            <div class="bg-white text-green-900 p-6 rounded-lg max-w-3xl mx-auto mb-8">
+                <h3 class="text-2xl font-bold mb-2">No Risk, All Reward</h3>
+                <p class="text-lg">Remember: We only get paid when you get paid. No upfront costs, no hidden fees, no obligations. You have everything to gain and nothing to lose.</p>
+            </div>
+            <a href="#contact" class="btn-secondary text-gray-900 px-8 py-3 rounded-md text-lg font-semibold inline-block mx-2">Call Now: 1-800-[NUMBER]</a>
+            <a href="#contact" class="btn-primary text-white px-8 py-3 rounded-md text-lg font-semibold inline-block mx-2">Complete Our Online Form</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="text-2xl font-bold text-white">US Asset Recovery Services, LLC</div>
+                    <p class="text-gray-400">© 2023 All Rights Reserved</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const btn = document.querySelector(".mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    </script>
+
+
+
+    <script src="https://cdn.botpress.cloud/webchat/v3.0/inject.js" defer></script>
+<script src="https://files.bpcontent.cloud/2025/06/19/07/20250619072645-BPQ0PM19.js" defer></script>
+    
+</body>
 </html>
